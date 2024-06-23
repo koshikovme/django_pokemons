@@ -110,7 +110,7 @@ class User(models.Model):
     pokemons = models.ManyToManyField(Pokemon, related_name='users')
 
     login = models.CharField(max_length=100)
-    password = models.CharField(max_length=)
+    password = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
